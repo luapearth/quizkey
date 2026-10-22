@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>QuizKey Privacy Policy</title>
-  <meta name="description" content="How the QuizKey screen-time app handles quiz questions, photos, minutes and settings. Everything stays on the device.">
+  <meta name="description" content="How the QuizKey screen-time app for Android and iPhone handles quiz questions, photos, minutes and settings. Everything stays on the device.">
   <meta name="theme-color" content="#5B4BDB">
   <link rel="canonical" href="https://luapearth.com/quizkey/privacy.html">
   <link rel="icon" href="assets/icons/icon-32.png" sizes="32x32">
   <link rel="apple-touch-icon" href="assets/icons/icon-180.png">
   <link rel="preload" href="assets/fonts/Fredoka.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="assets/style.css?v=1">
+  <link rel="stylesheet" href="assets/style.css?v=2">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -21,23 +21,23 @@
   </header>
 
   <main id="main" class="container policy">
-    <p class="eyebrow">QuizKey for Android</p>
+    <p class="eyebrow">QuizKey for Android and iPhone</p>
     <h1>Our privacy <span class="accent">policy.</span></h1>
-    <p class="meta">Effective date: October 21, 2026 · App: QuizKey for Android (com.luapearth.quizkey)</p>
+    <p class="meta">Effective date: October 22, 2026 · Apps: QuizKey for Android (com.luapearth.quizkey) and QuizKey for iPhone (App Store: “QuizKey – Screen Time Quiz”)</p>
 
     <section class="card tint-mint">
       <h2 style="color:var(--ink)">The short version</h2>
       <ul>
         <li>QuizKey does not collect any personal information. Nothing you or your child enter is sent to us or to anyone else.</li>
-        <li>The app has no internet access: it doesn't ask Android for permission to use the network.</li>
-        <li>Questions, photos, minutes and settings are stored only on the device, and are deleted when you uninstall the app.</li>
+        <li>QuizKey doesn't use the internet. On Android it doesn't even ask for permission to; on iPhone it makes no network connections of its own.</li>
+        <li>Questions, photos, minutes and settings are stored only on the device, and are deleted when you delete the app.</li>
         <li>No ads, no accounts, no analytics, no tracking.</li>
       </ul>
     </section>
 
     <section class="card">
       <h2>Who this policy is for</h2>
-      <p>QuizKey is a screen-time app for families. A parent chooses which apps are locked, writes quiz questions and sets the rules; a child answers questions to earn minutes on those apps. This policy explains what the app stores, where it stays and what control you have.</p>
+      <p>QuizKey is a screen-time app for families, on Android and on iPhone. A parent chooses which apps are locked, writes quiz questions and sets the rules; a child answers questions to earn minutes on those apps. This policy explains what the app stores, where it stays and what control you have.</p>
     </section>
 
     <section class="card">
@@ -49,19 +49,21 @@
           <tr><td>Quiz questions, answers and optional photos a parent adds</td><td>To show them to the child in quizzes</td><td>On the device only</td></tr>
           <tr><td>Minutes earned and used, with times</td><td>To keep the child's balance and show today's activity</td><td>On the device only</td></tr>
           <tr><td>Rules: minutes per answer, questions per quiz, daily limit</td><td>To apply the parent's settings</td><td>On the device only</td></tr>
-          <tr><td>The parent PIN, stored only as a one-way scrambled code (salted hash)</td><td>To keep Parent mode for parents</td><td>On the device only</td></tr>
+          <tr><td>The parent PIN and the PIN recovery code, each stored only as a one-way scrambled code (salted hash)</td><td>To keep Parent mode for parents, and let a parent who forgets the PIN set a new one</td><td>On the device only</td></tr>
+          <tr><td>How many wrong PIN or recovery-code tries were made in a row, and until when to wait</td><td>To slow down guessing</td><td>On the device only</td></tr>
           <tr><td>Which apps the parent chose to lock</td><td>To lock and unlock them</td><td>On the device only</td></tr>
-          <tr><td>Names of apps on the phone that open from the home screen</td><td>So the parent can choose which apps to lock</td><td>On the device only</td></tr>
+          <tr><td><em>Android only:</em> names of apps on the phone that open from the home screen</td><td>So the parent can choose which apps to lock</td><td>On the device only</td></tr>
         </tbody>
       </table>
-      <p><strong>Photos.</strong> When a parent adds a photo to a question, QuizKey makes its own smaller copy in its private storage. It reads only the photo the parent picks (through Android's photo picker) or takes with the camera app.</p>
+      <p><strong>Photos.</strong> When a parent adds a photo to a question, QuizKey makes its own smaller copy in its private storage. It reads only the photo the parent picks (through the system photo picker) or takes with the camera.</p>
       <p><strong>Answers.</strong> QuizKey counts right answers to award minutes. It does not build profiles of your child or send results anywhere.</p>
-      <p>All of this is kept in the app's private storage and is not included in device backups.</p>
+      <p>None of this is transmitted to us, sold, shared or used for advertising.</p>
+      <p><strong>Backups.</strong> On Android, QuizKey turns off automatic app backup, so this data is not copied to cloud backups. On iPhone, like other apps' data, it is included in your iPhone's own backup (iCloud Backup or a backup on your computer) if you have one turned on. That backup belongs to your Apple account; we never see it.</p>
     </section>
 
     <section class="card">
       <h2>What we collect</h2>
-      <p>Nothing. QuizKey has no account and no sign-in, and it cannot send information off the device: the app doesn't have internet access. We don't use analytics, advertising or tracking tools, and we don't sell or share any data.</p>
+      <p>Nothing. QuizKey has no account and no sign-in, and it doesn't send information off the device: it doesn't use the internet. We don't use analytics, advertising or tracking tools, and we don't sell or share any data.</p>
     </section>
 
     <section class="card">
@@ -71,31 +73,39 @@
 
     <section class="card">
       <h2>Permissions and device controls</h2>
+      <h3>On Android</h3>
+      <p>QuizKey asks for only what it needs:</p>
       <ul>
         <li><strong>Work profile / device administration.</strong> To lock the apps a parent chooses, QuizKey becomes the manager of a separate work profile (or of a dedicated child's phone) through Android's own setup, which the parent confirms. It uses this only to pause and un-pause the apps the parent selects, and to show a short message when a locked app is opened. It does not read messages, browsing, location or the contents of other apps. In a work profile, it cannot see or control the personal side of the phone.</li>
         <li><strong>Notifications and a foreground service.</strong> These show the countdown ("12:34 left") while a child uses earned minutes, and keep the timer accurate.</li>
         <li><strong>Run at start-up.</strong> After the phone restarts, QuizKey makes sure locked apps are locked again.</li>
       </ul>
+      <h3>On iPhone</h3>
+      <ul>
+        <li><strong>Screen Time (Apple's Family Controls).</strong> On the child's iPhone, which is signed in to a child account in Family Sharing, a parent approves QuizKey's Screen Time access with their own Apple ID. QuizKey uses it only to lock the apps the parent picks, show QuizKey's message when a locked app is opened, and lock the apps again when earned minutes run out. The parent picks apps in Apple's own app picker, and <strong>iOS does not tell QuizKey which apps they are</strong>: QuizKey only receives a private reference it can lock and unlock. QuizKey does not receive Screen Time usage data, and it cannot see messages, browsing, location or what your child does in other apps.</li>
+        <li><strong>Camera</strong> (asked only when a parent taps <em>Take photo</em>): to take a photo for a quiz question.</li>
+        <li>QuizKey and its two small helper parts (the screen shown over a locked app, and the timer that locks apps again) share the information above through a private storage area on the iPhone that only they can use.</li>
+      </ul>
     </section>
 
     <section class="card">
-      <h2>Services provided by Google</h2>
-      <p>QuizKey is distributed through Google Play. Google may collect information when you download or update apps under its own privacy policy. QuizKey itself does not send anything to Google.</p>
+      <h2>App stores</h2>
+      <p>QuizKey is distributed through Google Play, and on iPhone through Apple's App Store and TestFlight. Google and Apple may collect information when you download or update apps under their own privacy policies. QuizKey itself does not send anything to Google or Apple.</p>
     </section>
 
     <section class="card">
       <h2>Keeping and deleting data</h2>
       <ul>
         <li>Delete individual questions any time in Parent mode → Questions.</li>
-        <li>To delete everything, uninstall QuizKey (Settings → Apps → QuizKey → Uninstall) or clear its storage (Settings → Apps → QuizKey → Storage → Clear storage).</li>
-        <li>If you set up the strong lock, remove the work profile in Settings to remove the QuizKey inside it as well.</li>
-        <li>We hold no data about you, so there is nothing for us to export or delete on our side.</li>
+        <li><strong>Delete everything on Android:</strong> uninstall QuizKey (Settings → Apps → QuizKey → Uninstall) or clear its storage (Settings → Apps → QuizKey → Storage → Clear storage). If you set up the strong lock, remove the work profile in Settings to remove the QuizKey inside it as well.</li>
+        <li><strong>Delete everything on iPhone:</strong> delete the QuizKey app. Because a parent approved Screen Time access, your child can't delete it; a parent first turns QuizKey off in Settings → Screen Time (iOS may ask for the parent's approval), then deletes it. To stop locking without deleting, turn its Screen Time access off the same way. Copies in your iPhone's own backups are removed as those backups are replaced or deleted.</li>
+        <li>We hold no data about you, so there is nothing for us to export or delete on our side. You can still contact us with any questions.</li>
       </ul>
     </section>
 
     <section class="card">
       <h2>Changes to this policy</h2>
-      <p>If QuizKey changes how it handles data, for example by adding optional syncing between a parent's and a child's phone, we will update this page and the effective date before that change reaches the app.</p>
+      <p>If QuizKey changes how it handles data, for example by adding optional syncing between a parent's and a child's phone, we will update this page and the effective date before that version is released, and explain the change in the app.</p>
     </section>
 
     <section class="card">
@@ -108,7 +118,7 @@
   <footer class="container site-footer">
     <p>© 2026 QuizKey</p>
     <nav aria-label="Footer"><a href="index.html">Home</a><a href="mailto:jpgdm24@gmail.com">Contact: jpgdm24@gmail.com</a></nav>
-    <p class="legal">Google Play is a trademark of Google LLC.</p>
+    <p class="legal">Google Play is a trademark of Google LLC. iPhone, App Store, TestFlight and Screen Time are trademarks of Apple Inc.</p>
   </footer>
 </body>
 </html>

@@ -193,6 +193,14 @@ p { margin: 0; }
 .rule-list b { font-weight: 700; color: var(--grape); }
 .card-art { position: absolute; right: 18px; top: 18px; width: 54px; }
 
+/* iPhone */
+.iphone-card { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; padding: 48px; }
+.iphone-card .cta-row { margin: 26px 0 12px; }
+.ios-points { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0; padding: 0; list-style: none; }
+.ios-points li { background: var(--card); border-radius: 20px; padding: 20px; }
+.ios-points h3 { font-size: 19px; margin-bottom: 6px; }
+.ios-points p { color: var(--muted); font-size: 16px; }
+
 /* Kids row */
 .kids { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
 .kids .card { text-align: center; display: grid; justify-items: center; gap: 10px; }
@@ -235,6 +243,8 @@ p { margin: 0; }
 .policy .meta { color: var(--muted); font-size: 15px; margin-bottom: 30px; }
 .policy .card { margin-bottom: 22px; }
 .policy h2 { font-size: 26px; color: var(--grape); margin-bottom: 12px; }
+.policy h3 { font-size: 20px; margin: 22px 0 8px; }
+.policy h2 + h3 { margin-top: 4px; }
 .policy p + p, .policy p + ul, .policy ul + p, .policy table + p { margin-top: 12px; }
 .policy ul { margin: 0; padding-left: 22px; }
 .policy li + li { margin-top: 8px; }
@@ -249,7 +259,7 @@ p { margin: 0; }
   .hero-art { min-height: 0; aspect-ratio: 1 / 1.05; max-width: 560px; width: 100%; margin-inline: auto; }
   .steps, .kids { grid-template-columns: 1fr; }
   .step .shot { width: 52%; }
-  .family, .privacy-card, .faq { grid-template-columns: 1fr; padding: 32px; }
+  .family, .privacy-card, .iphone-card, .faq { grid-template-columns: 1fr; padding: 32px; }
   .faq { padding: 0; }
   .family .phones { height: 460px; max-width: 460px; width: 100%; margin-inline: auto; }
   .bento .wide, .bento .third, .bento .half { grid-column: span 6; }
@@ -262,7 +272,8 @@ p { margin: 0; }
   .bento .mini-phone { width: 62%; align-self: center; }
   .family { padding: 24px; }
   .family .phones { height: 380px; }
-  .privacy-card { padding: 24px; }
+  .privacy-card, .iphone-card { padding: 24px; }
+  .ios-points { grid-template-columns: 1fr; }
   .policy td:last-child { white-space: normal; }
   .float-card { font-size: 14px; padding: 10px 14px; }
 }
